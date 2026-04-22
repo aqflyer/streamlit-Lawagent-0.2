@@ -4,11 +4,11 @@ import os
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-9ae0d0e87d9543ff91ceebbb0ffebdde",
-    base_url="https://api.deepseek.com")
+    api_key="sk-abcdef1234567890abcdef1234567890abcdef12",
+    base_url="https://api.openai.com/v1")
 
 response = client.chat.completions.create(
-    model="deepseek-chat",
+    model="gpt-3.5-turbo",
     messages=[
         {
             #角色定位，核心任务
